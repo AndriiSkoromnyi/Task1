@@ -1,9 +1,7 @@
 ﻿using SampleHierarchies.Data.Mammals;
 using SampleHierarchies.Enums;
 using SampleHierarchies.Gui;
-using SampleHierarchies.Interfaces.Data.Mammals;
 using SampleHierarchies.Interfaces.Services;
-using SampleHierarchies.Services;
 
 
 public sealed class RabbitScreen : Screen
