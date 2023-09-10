@@ -102,7 +102,7 @@ namespace SampleHierarchies.Gui
                 }
 
                 // Save text colors to settings before saving to file
-                _settingsService.Write(_settings, fileName);
+                _dataService.Write(fileName);
                 Console.WriteLine("Data saving to: '{0}' was successful.", fileName);
             }
             catch
@@ -122,25 +122,17 @@ namespace SampleHierarchies.Gui
                     throw new ArgumentNullException(nameof(fileName));
                 }
 
-                _settings = _settingsService.Read(fileName);
+                _dataService.Read(fileName);
+                Console.WriteLine("Data reading from: '{0}' was successful.", fileName);
 
-                if (_settings is not null)
-                {
-                    // Use the loaded settings to set colors of different screens
-                    //SetTextColorsFromSettings();
-                    Console.WriteLine("This is the Animals Screen.");
-                }
-                else
-                {
-                    Console.WriteLine("Data reading from: '{0}' was not successful.", fileName);
-                }
             }
             catch
             {
-                Console.WriteLine("Data reading was not successful.");
+                Console.WriteLine("There is an error");
             }
-        }  
 
-        #endregion // Private Methods
+            #endregion // Private Methods
+
+        }
     }
 }

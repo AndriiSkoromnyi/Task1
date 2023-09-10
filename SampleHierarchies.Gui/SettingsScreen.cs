@@ -1,5 +1,6 @@
 ﻿using System;
 using SampleHierarchies.Enums;
+using SampleHierarchies.Interfaces.Data;
 using SampleHierarchies.Interfaces.Services;
 
 namespace SampleHierarchies.UserInterface
@@ -111,7 +112,7 @@ namespace SampleHierarchies.UserInterface
 
                         case SettingsMenuChoices.ReadSettingsFromFile:
                             Console.WriteLine("Reading settings from file.");
-                            Interfaces.Data.ISettings loadedSettings = _settingsService.Read("path_to_settings_file.json");
+                            ISettings loadedSettings = _settingsService.Read("path_to_settings_file.json");
                             _settingsService.Settings = loadedSettings;
                             break;
 
