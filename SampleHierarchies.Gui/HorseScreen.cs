@@ -1,13 +1,7 @@
-﻿
-using SampleHierarchies.Data.Mammals;
+﻿using SampleHierarchies.Data.Mammals;
 using SampleHierarchies.Enums;
 using SampleHierarchies.Gui;
 using SampleHierarchies.Interfaces.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 public sealed class HorseScreen : Screen
 {

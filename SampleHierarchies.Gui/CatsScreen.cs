@@ -1,10 +1,7 @@
 ﻿using SampleHierarchies.Data.Mammals;
 using SampleHierarchies.Enums;
 using SampleHierarchies.Gui;
-using SampleHierarchies.Interfaces.Data.Mammals;
 using SampleHierarchies.Interfaces.Services;
-using SampleHierarchies.Services;
-
 
 public sealed class CatScreen : Screen
 {
@@ -265,12 +262,12 @@ public sealed class CatScreen : Screen
             int age = Int32.Parse(ageAsString);
             int weight = Int32.Parse(weightAsString);
 
-            Cat cat = new Cat(name, age, weight, typeOfCat, hasOwner, foodPreference);
+            Cat cat = new Cat(name, age, weight, typeOfCat, hasOwner, foodPreference, typeOfCat);
 
             return cat;
         }
     }
 }
-    #endregion
+#endregion
 
 

@@ -218,12 +218,12 @@ public sealed class RabbitScreen : Screen
             if (hasOwnerInput.Equals("Y", StringComparison.OrdinalIgnoreCase))
             {
                 hasOwner = true;
-                
+
             }
             else if (hasOwnerInput.Equals("N", StringComparison.OrdinalIgnoreCase))
             {
                 hasOwner = false;
-                
+
             }
             else
             {
@@ -262,9 +262,9 @@ public sealed class RabbitScreen : Screen
 
         int age = Int32.Parse(ageAsString);
         int weight = Int32.Parse(weightAsString);
-        
-        Rabbit rabbit = new Rabbit (name, age, weight, typeOfRabbit, hasOwner, food);
-        
+
+        Rabbit rabbit = new Rabbit(name, age, weight, typeOfRabbit, hasOwner, food);
+
         return rabbit;
     }
     #endregion

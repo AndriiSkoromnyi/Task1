@@ -1,5 +1,4 @@
-﻿using System;
-using SampleHierarchies.Enums;
+﻿using SampleHierarchies.Enums;
 using SampleHierarchies.Interfaces.Data;
 using SampleHierarchies.Interfaces.Services;
 

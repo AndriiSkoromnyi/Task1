@@ -9,10 +9,10 @@ public interface IRabbit : IMammal
     /// <summary>
     /// Breed of rabbit.
     /// </summary>
-    
-    
+
     int Weight { get; set; }
     string TypeOfRabbit { get; set; }
     bool HasOwner { get; set; }
+    string Food { get; set; }
     #endregion // Interface Members
 }

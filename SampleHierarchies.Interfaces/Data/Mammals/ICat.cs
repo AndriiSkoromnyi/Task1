@@ -13,7 +13,7 @@
         int Weight { get; set; }
         string Color { get; set; }
         bool HasOwner { get; set; }
-
+        string TypeOfCat { get; set; }
         #endregion // Interface Members
     }
 }

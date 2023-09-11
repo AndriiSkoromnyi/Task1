@@ -1,7 +1,5 @@
 ﻿using SampleHierarchies.Enums;
-using SampleHierarchies.Interfaces.Data;
 using SampleHierarchies.Interfaces.Services;
-using SampleHierarchies.Services;
 
 namespace SampleHierarchies.Gui;
 
